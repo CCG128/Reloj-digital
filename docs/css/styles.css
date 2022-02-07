@@ -1,13 +1,18 @@
-
+/* Quitamos todo el margen y el padding que se pueda encontrar en nuestro archivo html */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* Colocamos un color de fondo */
 html{
     background-color: #023047;
 }
 
+/* A la clase reloj le daremos la altura maxima de la pantalla
+   un color de fondo, tipo de letra tamaño y sombra
+   Ademas le daremos un display de tipo flex y centraremos el 
+   contenido tanto en horizontal como en vertical */
 #reloj{
     height: 100vh;
     color: white;
@@ -19,6 +24,7 @@ html{
     justify-content: center;
 }
 
+/* Al contenedor del reloja le indicaremos centrar la letra, ademas de darle un color de fondo y un pequeño padding */
 .reloj-contenedor{
     background-color: #ffb703;
     padding: 4rem;
@@ -27,15 +33,19 @@ html{
     border-radius: 5px;
 }
 
+/* A la fecha le daremos un leve espaciado por arriba y le bajamos el tamaño a la fuente */
 #fecha{
     margin-top: 1.5rem;
     font-size: 2.5rem;
 }
 
+/* Creamos un clase, la cual su unico objetivo es colocar un pequeño borde en nuestro div de reloj */
 .animar{
     border: #8ecae6 2px solid;
 }
 
+/* Con media querys realizamos los ajustes necesarios para cisualizar de forma correcta nuestro 
+   reloj en todo tipo de dispositivos */
 @media only screen and (max-width: 600px) {
     #hora{
         font-size: 2.4rem;
