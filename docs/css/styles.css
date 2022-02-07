@@ -1,0 +1,11 @@
+
+html{
+    background-color: rgb(92, 87, 87);
+}
+
+#reloj{
+    color: white;
+    font-family: sans-serif;
+    font-size: 5rem;
+    text-shadow: 0px 0px 1px #333;
+}
