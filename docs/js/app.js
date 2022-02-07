@@ -9,6 +9,6 @@ const mostrarReloj = () =>{
     hora.innerHTML = `${hr}:${min}:${sec}`
 }
 
-const formatoNum = (val) => val < 10 ? val = val + "0" : val = val;
+const formatoNum = (val) => val < 10 ? val = "0" + val : val = val;
 
 setInterval(mostrarReloj, 1000);
