@@ -8,3 +8,5 @@ const mostrarReloj = () =>{
     let hora = document.getElementById("hora");
     hora.innerHTML = `${hr}:${min}:${sec}`
 }
+
+setInterval(mostrarReloj, 1000);
