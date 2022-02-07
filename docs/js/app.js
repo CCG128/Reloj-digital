@@ -17,6 +17,8 @@ const mostrarReloj = () =>{
     let fechaDiv = document.getElementById("fecha");
     fechaDiv.innerHTML = `${diaSemana} - ${fecha.getDate()} - ${mes} - ${fecha.getFullYear()}`;
 
+    document.getElementById("contenedor").classList.toggle("animar");
+
 }
 
 const formatoNum = (val) => val < 10 ? val = "0" + val : val = val;
